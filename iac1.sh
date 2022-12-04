@@ -29,9 +29,9 @@ useradd rogerio -m -s /bin/nash -p $(openssl passwd -crypt Senha464196) -G GRP_S
 
 echo "Especificando permissões dos diretórios..."
 
-chown walker:GRP_ADM /adm
-chown walker:GRP_VEN /ven
-chown walker:GRP_SEC /sec
+chown root:GRP_ADM /adm
+chown root:GRP_VEN /ven
+chown root:GRP_SEC /sec
 
 chmod 770 /adm
 chmod 770 /ven
